@@ -1,606 +1,606 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <status>
-<target
-   path=".">
-<entry
-   path="acceptance/cgcmd">
-<wc-status
-   item="external"
-   props="none">
-</wc-status>
-</entry>
-<entry
-   path="acceptance/jobs">
-<wc-status
-   props="none"
-   item="external">
-</wc-status>
-</entry>
-<entry
-   path="acceptance/ume">
-<wc-status
-   item="external"
-   props="none">
-</wc-status>
-</entry>
-<entry
-   path="agent">
-<wc-status
-   props="none"
-   item="external">
-</wc-status>
-</entry>
-<entry
-   path="agentspi">
-<wc-status
-   item="external"
-   props="none">
-</wc-status>
-</entry>
-<entry
-   path="arcadia">
-<wc-status
-   item="external"
-   props="none">
-</wc-status>
-</entry>
-<entry
-   path="bundles/morphia">
-<wc-status
-   item="external"
-   props="none">
-</wc-status>
-</entry>
-<entry
-   path="bundles/morphia-validation">
-<wc-status
-   item="external"
-   props="none">
-</wc-status>
-</entry>
-<entry
-   path="cg.delivery">
-<wc-status
-   item="external"
-   props="none">
-</wc-status>
-</entry>
-<entry
-   path="cmp/aam">
-<wc-status
-   props="none"
-   item="external">
-</wc-status>
-</entry>
-<entry
-   path="cmp/admin">
-<wc-status
-   item="external"
-   props="none">
-</wc-status>
-</entry>
-<entry
-   path="cmp/audit">
-<wc-status
-   item="external"
-   props="none">
-</wc-status>
-</entry>
-<entry
-   path="cmp/bootstrap">
-<wc-status
-   props="none"
-   item="external">
-</wc-status>
-</entry>
-<entry
-   path="cmp/bootstrapserver">
-<wc-status
-   props="none"
-   item="external">
-</wc-status>
-</entry>
-<entry
-   path="cmp/cg">
-<wc-status
-   props="none"
-   item="external">
-</wc-status>
-</entry>
-<entry
-   path="cmp/cgcft">
-<wc-status
-   item="external"
-   props="none">
-</wc-status>
-</entry>
-<entry
-   path="cmp/cgcommon">
-<wc-status
-   props="none"
-   item="external">
-</wc-status>
-</entry>
-<entry
-   path="cmp/cgmain">
-<wc-status
-   props="none"
-   item="external">
-</wc-status>
-</entry>
-<entry
-   path="cmp/cgrest">
-<wc-status
-   item="external"
-   props="none">
-</wc-status>
-</entry>
-<entry
-   path="cmp/cgui">
-<wc-status
-   item="external"
-   props="none">
-</wc-status>
-</entry>
-<entry
-   path="cmp/cli">
-<wc-status
-   item="external"
-   props="none">
-</wc-status>
-</entry>
-<entry
-   path="cmp/database">
-<wc-status
-   props="none"
-   item="external">
-</wc-status>
-</entry>
-<entry
-   path="cmp/dev">
-<wc-status
-   item="external"
-   props="none">
-</wc-status>
-</entry>
-<entry
-   path="cmp/features">
-<wc-status
-   item="external"
-   props="none">
-</wc-status>
-</entry>
-<entry
-   path="cmp/flow">
-<wc-status
-   item="external"
-   props="none">
-</wc-status>
-</entry>
-<entry
-   path="cmp/installer">
-<wc-status
-   props="none"
-   item="external">
-</wc-status>
-</entry>
-<entry
-   path="cmp/mail">
-<wc-status
-   item="external"
-   props="none">
-</wc-status>
-</entry>
-<entry
-   path="cmp/mbus">
-<wc-status
-   props="none"
-   item="external">
-</wc-status>
-</entry>
-<entry
-   path="cmp/participant">
-<wc-status
-   item="external"
-   props="none">
-</wc-status>
-</entry>
-<entry
-   path="cmp/passportproxy">
-<wc-status
-   item="external"
-   props="none">
-</wc-status>
-</entry>
-<entry
-   path="cmp/paxexam">
-<wc-status
-   item="external"
-   props="none">
-</wc-status>
-</entry>
-<entry
-   path="cmp/repository">
-<wc-status
-   item="external"
-   props="none">
-</wc-status>
-</entry>
-<entry
-   path="cmp/security">
-<wc-status
-   props="none"
-   item="external">
-</wc-status>
-</entry>
-<entry
-   path="cmp/sentinelproxy">
-<wc-status
-   item="external"
-   props="none">
-</wc-status>
-</entry>
-<entry
-   path="cmp/updatecenter">
-<wc-status
-   item="external"
-   props="none">
-</wc-status>
-</entry>
-<entry
-   path="cmp/web">
-<wc-status
-   item="external"
-   props="none">
-</wc-status>
-</entry>
-<entry
-   path="commons/audit">
-<wc-status
-   item="external"
-   props="none">
-</wc-status>
-</entry>
-<entry
-   path="commons/cftcommon">
-<wc-status
-   item="external"
-   props="none">
-</wc-status>
-</entry>
-<entry
-   path="commons/configuration">
-<wc-status
-   props="none"
-   item="external">
-</wc-status>
-</entry>
-<entry
-   path="commons/ldap">
-<wc-status
-   item="external"
-   props="none">
-</wc-status>
-</entry>
-<entry
-   path="commons/logparser">
-<wc-status
-   item="external"
-   props="none">
-</wc-status>
-</entry>
-<entry
-   path="commons/passportsso">
-<wc-status
-   item="external"
-   props="none">
-</wc-status>
-</entry>
-<entry
-   path="commons/search">
-<wc-status
-   item="external"
-   props="none">
-</wc-status>
-</entry>
-<entry
-   path="commons/ui">
-<wc-status
-   props="none"
-   item="external">
-</wc-status>
-</entry>
-<entry
-   path="commons/upgrader">
-<wc-status
-   item="external"
-   props="none">
-</wc-status>
-</entry>
-<entry
-   path="commons/utils">
-<wc-status
-   item="external"
-   props="none">
-</wc-status>
-</entry>
-<entry
-   path="commons/validation">
-<wc-status
-   item="external"
-   props="none">
-</wc-status>
-</entry>
-<entry
-   path="documentation">
-<wc-status
-   item="external"
-   props="none">
-</wc-status>
-</entry>
-<entry
-   path="maven/commonuiaggregator">
-<wc-status
-   props="none"
-   item="external">
-</wc-status>
-</entry>
-<entry
-   path="maven/mysql">
-<wc-status
-   props="none"
-   item="external">
-</wc-status>
-</entry>
-<entry
-   path="nodes/cft">
-<wc-status
-   props="none"
-   item="external">
-</wc-status>
-</entry>
-<entry
-   path="nodes/cgwebapps">
-<wc-status
-   item="external"
-   props="none">
-</wc-status>
-</entry>
-<entry
-   path="nodes/mongodb">
-<wc-status
-   props="none"
-   item="external">
-</wc-status>
-</entry>
-<entry
-   path="nodes/mysql">
-<wc-status
-   item="external"
-   props="none">
-</wc-status>
-</entry>
-<entry
-   path="nodes/passport">
-<wc-status
-   props="none"
-   item="external">
-</wc-status>
-</entry>
-<entry
-   path="nodes/sentinel">
-<wc-status
-   props="none"
-   item="external">
-</wc-status>
-</entry>
-<entry
-   path="nodes/tools">
-<wc-status
-   item="external"
-   props="none">
-</wc-status>
-</entry>
-<entry
-   path="opnode">
-<wc-status
-   item="external"
-   props="none">
-</wc-status>
-</entry>
-<entry
-   path="parent">
-<wc-status
-   props="none"
-   item="external">
-</wc-status>
-</entry>
-<entry
-   path="pom.xml">
-<wc-status
-   item="modified"
-   revision="104474"
-   props="normal">
-<commit
-   revision="104428">
-<author>froyer</author>
-<date>2014-11-07T13:51:43.329794Z</date>
-</commit>
-</wc-status>
-</entry>
-<entry
-   path="products/ume/cmd">
-<wc-status
-   item="external"
-   props="none">
-</wc-status>
-</entry>
-<entry
-   path="products/ume/product">
-<wc-status
-   props="none"
-   item="external">
-</wc-status>
-</entry>
-<entry
-   path="products/ume/tests">
-<wc-status
-   item="external"
-   props="none">
-</wc-status>
-</entry>
-<entry
-   path="tools/ats">
-<wc-status
-   props="none"
-   item="external">
-</wc-status>
-</entry>
-<entry
-   path="tools/buda">
-<wc-status
-   props="none"
-   item="external">
-</wc-status>
-</entry>
-<entry
-   path="tools/cft">
-<wc-status
-   props="none"
-   item="external">
-</wc-status>
-</entry>
-<entry
-   path="tools/codereview">
-<wc-status
-   item="external"
-   props="none">
-</wc-status>
-</entry>
-<entry
-   path="tools/dpg">
-<wc-status
-   props="none"
-   item="external">
-</wc-status>
-</entry>
-<entry
-   path="tools/encrypter">
-<wc-status
-   props="none"
-   item="external">
-</wc-status>
-</entry>
-<entry
-   path="tools/javadoc">
-<wc-status
-   item="external"
-   props="none">
-</wc-status>
-</entry>
-<entry
-   path="tools/jaxrsdoclet">
-<wc-status
-   item="external"
-   props="none">
-</wc-status>
-</entry>
-<entry
-   path="tools/jksmaster">
-<wc-status
-   props="none"
-   item="external">
-</wc-status>
-</entry>
-<entry
-   path="tools/kao">
-<wc-status
-   item="external"
-   props="none">
-</wc-status>
-</entry>
-<entry
-   path="tools/maven">
-<wc-status
-   item="external"
-   props="none">
-</wc-status>
-</entry>
-<entry
-   path="tools/pyrestclient">
-<wc-status
-   props="none"
-   item="external">
-</wc-status>
-</entry>
-<entry
-   path="tools/swaggerui">
-<wc-status
-   item="external"
-   props="none">
-</wc-status>
-</entry>
-<entry
-   path="tools/test">
-<wc-status
-   props="none"
-   item="external">
-</wc-status>
-</entry>
-<entry
-   path="tools/vmdemo">
-<wc-status
-   item="external"
-   props="none">
-</wc-status>
-</entry>
-<entry
-   path="arcadia/app">
-<wc-status
-   item="external"
-   props="none">
-</wc-status>
-</entry>
-<entry
-   path="arcadia/cg">
-<wc-status
-   props="none"
-   item="external">
-</wc-status>
-</entry>
-<entry
-   path="arcadia/node">
-<wc-status
-   item="external"
-   props="none">
-</wc-status>
-</entry>
-<entry
-   path="acceptance/ume/server/jbehave">
-<wc-status
-   item="unversioned"
-   props="none">
-</wc-status>
-</entry>
-<entry
-   path="acceptance/ume/server/pom.xml">
-<wc-status
-   item="modified"
-   revision="104474"
-   props="none">
-<commit
-   revision="104075">
-<author>ebour</author>
-<date>2014-11-04T13:16:56.067809Z</date>
-</commit>
-</wc-status>
-</entry>
-<entry
-   path="acceptance/ume/server/src/test/resources/stories/CFTs.story">
-<wc-status
-   props="none"
-   item="unversioned">
-</wc-status>
-</entry>
-</target>
+    <target
+            path=".">
+        <entry
+                path="acceptance/cgcmd">
+            <wc-status
+                    item="external"
+                    props="none">
+            </wc-status>
+        </entry>
+        <entry
+                path="acceptance/jobs">
+            <wc-status
+                    props="none"
+                    item="external">
+            </wc-status>
+        </entry>
+        <entry
+                path="acceptance/ume">
+            <wc-status
+                    item="external"
+                    props="none">
+            </wc-status>
+        </entry>
+        <entry
+                path="agent">
+            <wc-status
+                    props="none"
+                    item="external">
+            </wc-status>
+        </entry>
+        <entry
+                path="agentspi">
+            <wc-status
+                    item="external"
+                    props="none">
+            </wc-status>
+        </entry>
+        <entry
+                path="arcadia">
+            <wc-status
+                    item="external"
+                    props="none">
+            </wc-status>
+        </entry>
+        <entry
+                path="bundles/morphia">
+            <wc-status
+                    item="external"
+                    props="none">
+            </wc-status>
+        </entry>
+        <entry
+                path="bundles/morphia-validation">
+            <wc-status
+                    item="external"
+                    props="none">
+            </wc-status>
+        </entry>
+        <entry
+                path="cg.delivery">
+            <wc-status
+                    item="external"
+                    props="none">
+            </wc-status>
+        </entry>
+        <entry
+                path="cmp/aam">
+            <wc-status
+                    props="none"
+                    item="external">
+            </wc-status>
+        </entry>
+        <entry
+                path="cmp/admin">
+            <wc-status
+                    item="external"
+                    props="none">
+            </wc-status>
+        </entry>
+        <entry
+                path="cmp/audit">
+            <wc-status
+                    item="external"
+                    props="none">
+            </wc-status>
+        </entry>
+        <entry
+                path="cmp/bootstrap">
+            <wc-status
+                    props="none"
+                    item="external">
+            </wc-status>
+        </entry>
+        <entry
+                path="cmp/bootstrapserver">
+            <wc-status
+                    props="none"
+                    item="external">
+            </wc-status>
+        </entry>
+        <entry
+                path="cmp/cg">
+            <wc-status
+                    props="none"
+                    item="external">
+            </wc-status>
+        </entry>
+        <entry
+                path="cmp/cgcft">
+            <wc-status
+                    item="external"
+                    props="none">
+            </wc-status>
+        </entry>
+        <entry
+                path="cmp/cgcommon">
+            <wc-status
+                    props="none"
+                    item="external">
+            </wc-status>
+        </entry>
+        <entry
+                path="cmp/cgmain">
+            <wc-status
+                    props="none"
+                    item="external">
+            </wc-status>
+        </entry>
+        <entry
+                path="cmp/cgrest">
+            <wc-status
+                    item="external"
+                    props="none">
+            </wc-status>
+        </entry>
+        <entry
+                path="cmp/cgui">
+            <wc-status
+                    item="external"
+                    props="none">
+            </wc-status>
+        </entry>
+        <entry
+                path="cmp/cli">
+            <wc-status
+                    item="external"
+                    props="none">
+            </wc-status>
+        </entry>
+        <entry
+                path="cmp/database">
+            <wc-status
+                    props="none"
+                    item="external">
+            </wc-status>
+        </entry>
+        <entry
+                path="cmp/dev">
+            <wc-status
+                    item="external"
+                    props="none">
+            </wc-status>
+        </entry>
+        <entry
+                path="cmp/features">
+            <wc-status
+                    item="external"
+                    props="none">
+            </wc-status>
+        </entry>
+        <entry
+                path="cmp/flow">
+            <wc-status
+                    item="external"
+                    props="none">
+            </wc-status>
+        </entry>
+        <entry
+                path="cmp/installer">
+            <wc-status
+                    props="none"
+                    item="external">
+            </wc-status>
+        </entry>
+        <entry
+                path="cmp/mail">
+            <wc-status
+                    item="external"
+                    props="none">
+            </wc-status>
+        </entry>
+        <entry
+                path="cmp/mbus">
+            <wc-status
+                    props="none"
+                    item="external">
+            </wc-status>
+        </entry>
+        <entry
+                path="cmp/participant">
+            <wc-status
+                    item="external"
+                    props="none">
+            </wc-status>
+        </entry>
+        <entry
+                path="cmp/passportproxy">
+            <wc-status
+                    item="external"
+                    props="none">
+            </wc-status>
+        </entry>
+        <entry
+                path="cmp/paxexam">
+            <wc-status
+                    item="external"
+                    props="none">
+            </wc-status>
+        </entry>
+        <entry
+                path="cmp/repository">
+            <wc-status
+                    item="external"
+                    props="none">
+            </wc-status>
+        </entry>
+        <entry
+                path="cmp/security">
+            <wc-status
+                    props="none"
+                    item="external">
+            </wc-status>
+        </entry>
+        <entry
+                path="cmp/sentinelproxy">
+            <wc-status
+                    item="external"
+                    props="none">
+            </wc-status>
+        </entry>
+        <entry
+                path="cmp/updatecenter">
+            <wc-status
+                    item="external"
+                    props="none">
+            </wc-status>
+        </entry>
+        <entry
+                path="cmp/web">
+            <wc-status
+                    item="external"
+                    props="none">
+            </wc-status>
+        </entry>
+        <entry
+                path="commons/audit">
+            <wc-status
+                    item="external"
+                    props="none">
+            </wc-status>
+        </entry>
+        <entry
+                path="commons/cftcommon">
+            <wc-status
+                    item="external"
+                    props="none">
+            </wc-status>
+        </entry>
+        <entry
+                path="commons/configuration">
+            <wc-status
+                    props="none"
+                    item="external">
+            </wc-status>
+        </entry>
+        <entry
+                path="commons/ldap">
+            <wc-status
+                    item="external"
+                    props="none">
+            </wc-status>
+        </entry>
+        <entry
+                path="commons/logparser">
+            <wc-status
+                    item="external"
+                    props="none">
+            </wc-status>
+        </entry>
+        <entry
+                path="commons/passportsso">
+            <wc-status
+                    item="external"
+                    props="none">
+            </wc-status>
+        </entry>
+        <entry
+                path="commons/search">
+            <wc-status
+                    item="external"
+                    props="none">
+            </wc-status>
+        </entry>
+        <entry
+                path="commons/ui">
+            <wc-status
+                    props="none"
+                    item="external">
+            </wc-status>
+        </entry>
+        <entry
+                path="commons/upgrader">
+            <wc-status
+                    item="external"
+                    props="none">
+            </wc-status>
+        </entry>
+        <entry
+                path="commons/utils">
+            <wc-status
+                    item="external"
+                    props="none">
+            </wc-status>
+        </entry>
+        <entry
+                path="commons/validation">
+            <wc-status
+                    item="external"
+                    props="none">
+            </wc-status>
+        </entry>
+        <entry
+                path="documentation">
+            <wc-status
+                    item="external"
+                    props="none">
+            </wc-status>
+        </entry>
+        <entry
+                path="maven/commonuiaggregator">
+            <wc-status
+                    props="none"
+                    item="external">
+            </wc-status>
+        </entry>
+        <entry
+                path="maven/mysql">
+            <wc-status
+                    props="none"
+                    item="external">
+            </wc-status>
+        </entry>
+        <entry
+                path="nodes/cft">
+            <wc-status
+                    props="none"
+                    item="external">
+            </wc-status>
+        </entry>
+        <entry
+                path="nodes/cgwebapps">
+            <wc-status
+                    item="external"
+                    props="none">
+            </wc-status>
+        </entry>
+        <entry
+                path="nodes/mongodb">
+            <wc-status
+                    props="none"
+                    item="external">
+            </wc-status>
+        </entry>
+        <entry
+                path="nodes/mysql">
+            <wc-status
+                    item="external"
+                    props="none">
+            </wc-status>
+        </entry>
+        <entry
+                path="nodes/passport">
+            <wc-status
+                    props="none"
+                    item="external">
+            </wc-status>
+        </entry>
+        <entry
+                path="nodes/sentinel">
+            <wc-status
+                    props="none"
+                    item="external">
+            </wc-status>
+        </entry>
+        <entry
+                path="nodes/tools">
+            <wc-status
+                    item="external"
+                    props="none">
+            </wc-status>
+        </entry>
+        <entry
+                path="opnode">
+            <wc-status
+                    item="external"
+                    props="none">
+            </wc-status>
+        </entry>
+        <entry
+                path="parent">
+            <wc-status
+                    props="none"
+                    item="external">
+            </wc-status>
+        </entry>
+        <entry
+                path="pom.xml">
+            <wc-status
+                    item="modified"
+                    revision="104474"
+                    props="normal">
+                <commit
+                        revision="104428">
+                    <author>froyer</author>
+                    <date>2014-11-07T13:51:43.329794Z</date>
+                </commit>
+            </wc-status>
+        </entry>
+        <entry
+                path="products/ume/cmd">
+            <wc-status
+                    item="external"
+                    props="none">
+            </wc-status>
+        </entry>
+        <entry
+                path="products/ume/product">
+            <wc-status
+                    props="none"
+                    item="external">
+            </wc-status>
+        </entry>
+        <entry
+                path="products/ume/tests">
+            <wc-status
+                    item="external"
+                    props="none">
+            </wc-status>
+        </entry>
+        <entry
+                path="tools/ats">
+            <wc-status
+                    props="none"
+                    item="external">
+            </wc-status>
+        </entry>
+        <entry
+                path="tools/buda">
+            <wc-status
+                    props="none"
+                    item="external">
+            </wc-status>
+        </entry>
+        <entry
+                path="tools/cft">
+            <wc-status
+                    props="none"
+                    item="external">
+            </wc-status>
+        </entry>
+        <entry
+                path="tools/codereview">
+            <wc-status
+                    item="external"
+                    props="none">
+            </wc-status>
+        </entry>
+        <entry
+                path="tools/dpg">
+            <wc-status
+                    props="none"
+                    item="external">
+            </wc-status>
+        </entry>
+        <entry
+                path="tools/encrypter">
+            <wc-status
+                    props="none"
+                    item="external">
+            </wc-status>
+        </entry>
+        <entry
+                path="tools/javadoc">
+            <wc-status
+                    item="external"
+                    props="none">
+            </wc-status>
+        </entry>
+        <entry
+                path="tools/jaxrsdoclet">
+            <wc-status
+                    item="external"
+                    props="none">
+            </wc-status>
+        </entry>
+        <entry
+                path="tools/jksmaster">
+            <wc-status
+                    props="none"
+                    item="external">
+            </wc-status>
+        </entry>
+        <entry
+                path="tools/kao">
+            <wc-status
+                    item="external"
+                    props="none">
+            </wc-status>
+        </entry>
+        <entry
+                path="tools/maven">
+            <wc-status
+                    item="external"
+                    props="none">
+            </wc-status>
+        </entry>
+        <entry
+                path="tools/pyrestclient">
+            <wc-status
+                    props="none"
+                    item="external">
+            </wc-status>
+        </entry>
+        <entry
+                path="tools/swaggerui">
+            <wc-status
+                    item="external"
+                    props="none">
+            </wc-status>
+        </entry>
+        <entry
+                path="tools/test">
+            <wc-status
+                    props="none"
+                    item="external">
+            </wc-status>
+        </entry>
+        <entry
+                path="tools/vmdemo">
+            <wc-status
+                    item="external"
+                    props="none">
+            </wc-status>
+        </entry>
+        <entry
+                path="arcadia/app">
+            <wc-status
+                    item="external"
+                    props="none">
+            </wc-status>
+        </entry>
+        <entry
+                path="arcadia/cg">
+            <wc-status
+                    props="none"
+                    item="external">
+            </wc-status>
+        </entry>
+        <entry
+                path="arcadia/node">
+            <wc-status
+                    item="external"
+                    props="none">
+            </wc-status>
+        </entry>
+        <entry
+                path="acceptance/ume/server/jbehave">
+            <wc-status
+                    item="unversioned"
+                    props="none">
+            </wc-status>
+        </entry>
+        <entry
+                path="acceptance/ume/server/pom.xml">
+            <wc-status
+                    item="modified"
+                    revision="104474"
+                    props="none">
+                <commit
+                        revision="104075">
+                    <author>ebour</author>
+                    <date>2014-11-04T13:16:56.067809Z</date>
+                </commit>
+            </wc-status>
+        </entry>
+        <entry
+                path="acceptance/ume/server/src/test/resources/stories/CFTs.story">
+            <wc-status
+                    props="none"
+                    item="unversioned">
+            </wc-status>
+        </entry>
+    </target>
 </status>
