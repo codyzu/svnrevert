@@ -16,40 +16,27 @@ repo = None
 workingdir = ""
 
 
-def collect_revert_dirs(svnitems):
-    paths = [svnitem.path for svnitem in svnitems if svnitem.item == 'external']
-    paths.insert(0, workingdir)  # insert the working directory
-    return paths
+def get_svn_statuses():
+    click.echo("Getting svn status for: " + workingdir)
+    xmlstatus = repo.run_command('status', ['--xml', workingdir], combine=True)
 
-
-def collect_unversioned_item_paths(svnitems):
-    return [svnitem.path for svnitem in svnitems if svnitem.item == 'unversioned']
-
-
-def iter_svn_item_status(xmlstatus):
     click.echo("Parsing SVN results")
     tree = ET.fromstring(xmlstatus)
 
+    svnitems = list()
     for entry in tree.iter('entry'):
         path = entry.attrib['path']
         status = entry.find('wc-status')
         item = status.attrib['item']
-        yield SvnItem(path, item)
+        svnitems.append(SvnItem(path, item))
 
-def get_svn_item_statuses():
-    click.echo("Getting svn status for: " + workingdir)
-    xmlstatus = repo.run_command('status', ['--xml', workingdir], combine=True)
-    return list(iter_svn_item_status(xmlstatus))
-
-
-def collect_non_externals(svnitems):
-    return [svnitem for svnitem in svnitems if svnitem.item != 'external']
+    return svnitems
 
 
 def revert_dirs_recursively(paths):
     result = ""
-    with click.progressbar(paths) as revertpaths:
-        for path in revertpaths:
+    with click.progressbar(paths) as revert_paths:
+        for path in revert_paths:
             if not dryrun:
                 result += repo.run_command('revert', ['-R', path], combine=True)
 
@@ -74,20 +61,25 @@ def delete_items(items):
     if dryrun:
         click.secho("No changes made in dry-run mode", fg='green')
 
+
 @click.command()
 @click.option('--dry-run', '-n', is_flag=True, help="Don't perform any operations that could change files")
 @click.argument("path", default=".")
 def revert(dry_run, path):
     """Recursively revert the given path and any contained externals"""
+    # setup our global variables
     global dryrun
-    dryrun = dry_run
     global repo
-    repo = svn.local.LocalClient(path)
     global workingdir
+    dryrun = dry_run
+    repo = svn.local.LocalClient(path)
     workingdir = path
 
-    svnitems = get_svn_item_statuses()
-    changes = sorted(collect_non_externals(svnitems), key=attrgetter('path'))
+    # svn status
+    svnitems = get_svn_statuses()
+
+    # collect all of the changes, print them, and exit if there are none
+    changes = sorted([svnitem for svnitem in svnitems if svnitem.item != 'external'], key=attrgetter('path'))
     for svnitem in changes:
         click.secho("{0}: {1}".format(svnitem.item, svnitem.path), fg='yellow')
 
@@ -97,19 +89,26 @@ def revert(dry_run, path):
         click.secho("Exiting", fg='green')
         return
 
-    revert_dirs = sorted(collect_revert_dirs(svnitems))
+    # collect the dirs we will revert, print them, and then revert
+    # for simplicity, we simply revert all externals and the working dir
+    revert_dirs = [svnitem.path for svnitem in svnitems if svnitem.item == 'external']
+    revert_dirs.insert(0, workingdir)  # don't forget to revert the working dir, since it is not an external
+    revert_dirs = sorted(revert_dirs)
 
     click.echo("The following directories will be recursively reverted:")
 
-    for dir in revert_dirs:
-        click.secho(dir, fg='yellow')
+    for revert_dir in revert_dirs:
+        click.secho(revert_dir, fg='yellow')
 
     if click.confirm("Recursively revert the above {0} directories".format(len(revert_dirs)), abort=True):
         click.secho("Reverting...", fg='red')
         revert_dirs_recursively(revert_dirs)
 
-    svnitems = get_svn_item_statuses()
-    unversioned = sorted(collect_unversioned_item_paths(svnitems))
+    # new svn status after the above revert
+    svnitems = get_svn_statuses()
+
+    # collect all unversioned files/dirs, print them, and then delete them
+    unversioned = sorted([svnitem.path for svnitem in svnitems if svnitem.item == 'unversioned'])
     click.echo("The following items are unversioned:")
 
     for item in unversioned:
