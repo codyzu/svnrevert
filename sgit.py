@@ -108,10 +108,13 @@ def delete_unversioned(svnitems):
 
 
 @click.command()
-@click.option('--dry-run', '-n', is_flag=True, help="Don't perform any operations that could change files")
+@click.option('--dry-run', '-n', is_flag=True, help="Don't modify any files or directories.")
 @click.argument("path", default=".")
 def revert(dry_run, path):
-    """Recursively revert the given path and any contained externals"""
+    """Recursively revert the given path and any contained externals
+
+    If no PATH is given, it defaults to '.'
+    """
     # setup our global variables
     global dryrun
     global repo
