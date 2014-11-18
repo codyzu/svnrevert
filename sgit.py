@@ -1,3 +1,10 @@
+"""Useful operations when working with git and svn simulatenously.
+
+References:
+http://pysvn.tigris.org/docs/pysvn_prog_ref.html#pysvn_wc_status_kind
+http://svnbook.red-bean.com/en/1.7/svn.developer.usingapi.html
+
+"""
 import pathlib
 import xml.etree.ElementTree
 
