@@ -84,9 +84,21 @@ def summarize_changes(svnitems):
     return len(changes) > 0
 
 
-def revert_changes(svnitems):
+def get_externals():
+    """Execute svn propget svn:externals and return a list of local dirs that are externals"""
+    click.echo("Getting svnexternals for: " + workingdir)
+    externals = repo.run_command('propget', ['svn:externals', workingdir], combine=False)
+
+    # grab just the right side of the space, the local path for the external
+    # we filter the externals that have the format "remote_path local_path", any other format will be ignored
+    # finally, we insert the working directory before before all local paths
+    externals = [os.path.join(workingdir, external.split()[1]) for external in externals if len(external.split()) == 2]
+    return externals
+
+
+def revert_changes():
     """Revert the working dir and all externals"""
-    revert_dirs = [svnitem.path for svnitem in svnitems if svnitem.item == 'external']
+    revert_dirs = get_externals()
     revert_dirs.insert(0, workingdir)  # don't forget to revert the working dir, since it is not an external
     revert_dirs = sorted(revert_dirs)
 
@@ -138,7 +150,7 @@ def revert(dry_run, path):
         click.secho("Exiting", fg='green')
         return
 
-    revert_changes(svnitems)
+    revert_changes()
 
     # refresh svn status after reverting
     svnitems = get_svn_statuses()

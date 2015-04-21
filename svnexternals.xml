@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<target
+   path="/home/cody/dev/cg/darwin">
+<property
+   name="svn:externals">^/cg.acceptance/cgcmd/trunk acceptance/cgcmd
+^/cg.acceptance/jobs/trunk acceptance/jobs
+^/acceptance/ume/trunk acceptance/ume
+^/agent/trunk agent
+^/agentclient/trunk agentclient
+^/agentspi/trunk agentspi
+https://svn4.ecd.axway.int/svn/arcadia/_all arcadia
+^/axiom/registry/trunk axiom/registry
+^/bundles/morphia/trunk bundles/morphia
+^/bundles/morphia-validation/trunk bundles/morphia-validation
+^/cg/astrolab/app/trunk cg/astrolab/app
+^/cg/astrolab/cg/trunk cg/astrolab/cg
+^/cg/astrolab/node/trunk cg/astrolab/node
+^/cg/astrolab/product/trunk cg/astrolab/product
+^/cg/fullproduct/trunk cg/fullproduct
+^/cg.delivery/distrib/trunk cg.delivery/distrib
+^/cg.delivery/rpm/trunk cg.delivery/rpm
+^/cmp/aam/trunk cmp/aam
+^/cmp/admin/trunk cmp/admin
+^/cmp/audit/trunk cmp/audit
+^/cmp/bootstrap/trunk cmp/bootstrap
+^/cmp/bootstrapserver/trunk cmp/bootstrapserver
+^/cmp/cgcft/trunk cmp/cgcft
+^/cmp/cgmain/trunk cmp/cgmain
+^/cmp/cgrest/trunk cmp/cgrest
+^/cmp/cgui/trunk cmp/cgui
+^/cmp/cli/trunk cmp/cli
+^/cmp/database/trunk cmp/database
+^/cmp/dev/trunk cmp/dev
+^/cmp/features/trunk cmp/features
+^/cmp/flow/trunk cmp/flow
+^/cmp/installer/trunk cmp/installer
+^/cmp/mail/trunk cmp/mail
+^/cmp/mbus/trunk cmp/mbus
+^/cmp/participant/trunk cmp/participant
+^/cmp/passportproxy/trunk cmp/passportproxy
+^/cmp/paxexam/trunk cmp/paxexam
+^/cmp/repository/trunk cmp/repository
+^/cmp/security/trunk cmp/security
+^/cmp/sentinelproxy/trunk cmp/sentinelproxy
+^/cmp/updatecenter/trunk cmp/updatecenter
+^/cmp/web/trunk cmp/web
+^/commons/audit/trunk commons/audit
+^/commons/cftcommon/trunk commons/cftcommon
+^/commons/configuration/trunk commons/configuration
+^/commons/ldap/trunk commons/ldap
+^/commons/logparser/trunk commons/logparser
+^/commons/passportsso/trunk commons/passportsso
+^/commons/search/trunk commons/search
+^/commons/ui/trunk commons/ui
+^/commons/upgrader/trunk commons/upgrader
+^/commons/utils/trunk commons/utils
+^/commons/validation/trunk commons/validation
+^/documentation/trunk documentation
+^/maven/commonuiaggregator/trunk maven/commonuiaggregator
+^/maven/mysql/trunk maven/mysql
+^/nodes/cft/trunk nodes/cft
+^/nodes/cgwebapps/trunk nodes/cgwebapps
+^/nodes/mongodb/trunk nodes/mongodb
+^/nodes/mysql/trunk nodes/mysql
+^/nodes/passport/trunk nodes/passport
+^/nodes/sentinel/trunk nodes/sentinel
+^/nodes/tools/trunk nodes/tools
+^/opnode/trunk opnode
+^/parent/trunk parent
+^/products/ume/cmd/trunk products/ume/cmd
+^/products/ume/product/trunk products/ume/product
+^/products/ume/tests/toolbox/trunk products/ume/tests/toolbox
+^/tools/ats/trunk tools/ats
+^/tools/buda/trunk tools/buda
+^/tools/cft/trunk tools/cft
+^/tools/codereview/trunk tools/codereview
+^/tools/dpg/trunk tools/dpg
+^/tools/encrypter/trunk tools/encrypter
+^/tools/javadoc/trunk tools/javadoc
+^/tools/jaxrsdoclet/trunk tools/jaxrsdoclet
+^/tools/jksmaster/trunk tools/jksmaster
+^/tools/kao/trunk tools/kao
+^/tools/maven/trunk tools/maven
+^/tools/cg/pyrestclient/trunk tools/pyrestclient
+^/tools/swaggerui/trunk tools/swaggerui
+^/tools/test/trunk tools/test
+^/tools/vmdemo/trunk tools/vmdemo
+^/cmp/pkiservice/trunk cmp/pkiservice
+</property>
+</target>
+</properties>
