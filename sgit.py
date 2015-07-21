@@ -48,7 +48,10 @@ def revert_dirs_recursively(paths):
     with click.progressbar(paths) as revert_paths:
         for path in revert_paths:
             if not dryrun:
-                result += repo.run_command('revert', ['-R', path], combine=True)
+                try:
+                    result += repo.run_command('revert', ['-R', path], combine=True)
+                except ValueError as error:
+                    result += "ERROR reverting {0}: {1}\n".format(path, error)
 
     click.secho(result, fg='red')
 
