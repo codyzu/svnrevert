@@ -87,16 +87,30 @@ def summarize_changes(svnitems):
     return len(changes) > 0
 
 
-def get_externals():
+def get_externals_for_dir(current_directory):
     """Execute svn propget svn:externals and return a list of local dirs that are externals"""
-    click.echo("Getting svnexternals for: " + workingdir)
-    externals = repo.run_command('propget', ['svn:externals', workingdir], combine=False)
+    click.echo("Getting svnexternals for: " + current_directory)
+    externals = repo.run_command('propget', ['svn:externals', current_directory], combine=False)
 
     # grab just the right side of the space, the local path for the external
     # we filter the externals that have the format "remote_path local_path", any other format will be ignored
-    # finally, we insert the working directory before before all local paths
-    externals = [os.path.join(workingdir, external.split()[1]) for external in externals if len(external.split()) == 2]
+    # finally, we insert the current directory before before all local paths
+    externals = [os.path.join(current_directory, external.split()[1]) for external in externals if len(external.split()) == 2]
+
+    new_externals = []
+    for external_dir in externals:
+        # recursively check for externals if the local directory exists
+        if pathlib.Path(external_dir).exists():
+            new_externals.extend(get_externals_for_dir(external_dir))
+
+    externals.extend(new_externals)
+
     return externals
+
+
+def get_externals():
+    """Recursively get the externals starting at the workingdir"""
+    return get_externals_for_dir(workingdir)
 
 
 def revert_changes():
