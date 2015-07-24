@@ -1,4 +1,0 @@
-click==3.3
-python-dateutil==2.2
-six==1.7.2
--e git+https://github.com/codyzu/PySvn.git@556bf398008f7a40cb7a1130180d78e27007db84#egg=svn-origin/master
