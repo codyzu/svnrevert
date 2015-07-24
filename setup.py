@@ -33,7 +33,7 @@ setup(
 
     # Author details
     author='Cody Zuschlag',
-    # author_email='set@me.com',
+    #author_email='set@me.com',
 
     # Choose your license
     #license='MIT',
