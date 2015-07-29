@@ -12,3 +12,19 @@ This ensures your entire working copy (including externals) is in pristine state
 
 I wrote the tool to facilitate a working with multiple VCS on the same local working copies.
 Specifically, when the project uses svn for the official repository, but I prefer to work with git locally.
+
+
+Usage
+-----
+
+```
+Usage: svnrevert [OPTIONS] [PATH]
+
+  Recursively revert the given path and any contained externals
+
+  If no PATH is given, it defaults to '.'
+
+Options:
+  -n, --dry-run  Don't modify any files or directories.
+  --help         Show this message and exit.
+```
