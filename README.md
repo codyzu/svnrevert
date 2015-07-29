@@ -28,3 +28,14 @@ Options:
   -n, --dry-run  Don't modify any files or directories.
   --help         Show this message and exit.
 ```
+
+Installation
+------------
+
+:warning: requires Python 3 (for the moment)
+
+Install the latest with pip:
+
+```
+pip install https://github.com/codyzu/svnrevert/archive/master.zip
+```
