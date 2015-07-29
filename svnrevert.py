@@ -18,6 +18,7 @@ import svn.local
 
 __author__ = 'cody'
 
+# namedtuple to create a very simple data structure representing svn items
 SvnItem = collections.namedtuple('SvnItem', ['path', 'item'])
 dryrun = False
 repo = None
