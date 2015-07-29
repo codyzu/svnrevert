@@ -32,7 +32,7 @@ Options:
 Installation
 ------------
 
-:warning: requires Python 3 (for the moment)
+**:warning: requires Python 3** *(for the moment)*
 
 Install the latest with pip:
 
