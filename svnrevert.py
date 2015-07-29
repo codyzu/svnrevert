@@ -1,4 +1,6 @@
-"""Useful operations when working with git and svn simulatenously.
+"""Recursively revert local svn directory, including externals, and optionally delete any unversioned files.
+
+Useful for restoring a local svn checkout to a pristine state before updating.
 
 References:
 http://pysvn.tigris.org/docs/pysvn_prog_ref.html#pysvn_wc_status_kind
@@ -16,7 +18,7 @@ import os
 import svn.local
 
 
-__author__ = 'cody'
+__author__ = 'codyzu'
 
 # namedtuple to create a very simple data structure representing svn items
 SvnItem = collections.namedtuple('SvnItem', ['path', 'item'])
