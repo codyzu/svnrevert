@@ -7,13 +7,12 @@ http://pysvn.tigris.org/docs/pysvn_prog_ref.html#pysvn_wc_status_kind
 http://svnbook.red-bean.com/en/1.7/svn.developer.usingapi.html
 
 """
-import pathlib
+import path
 import xml.etree.ElementTree
 
 import collections
 import click
 import operator
-import shutil
 import os
 import svn.local
 
@@ -64,16 +63,16 @@ def revert_dirs_recursively(paths):
 
 def delete_items(paths):
     """Delete a list of paths to files or directories"""
-    for path in paths:
-        p = pathlib.Path(path)
-        normal_path = str(p)  # prefer the normalized path from pathlib
+    for current_path in paths:
+        p = path.Path(current_path)
+        normal_path = p.abspath()
         click.secho("Removing: " + normal_path, fg='red')
-        if p.is_dir():
+        if p.isdir():
             if not dryrun:
-                shutil.rmtree(normal_path)
+                p.rmtree()
         else:
             if not dryrun:
-                os.remove(normal_path)
+                p.remove()
 
     if dryrun:
         click.secho("No changes made in dry-run mode", fg='green')
@@ -103,7 +102,7 @@ def get_externals_for_dir(current_directory):
     new_externals = []
     for external_dir in externals:
         # recursively check for externals if the local directory exists
-        if pathlib.Path(external_dir).exists():
+        if path.Path(external_dir).exists():
             new_externals.extend(get_externals_for_dir(external_dir))
 
     externals.extend(new_externals)
